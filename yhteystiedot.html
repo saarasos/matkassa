@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Matkassa mukana</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,22 +10,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     body{background-image: url(images/pexels-padrinan-255379.jpg); 
-    background-repeat: no-repeat; 
-    background-size: cover;background-position: center center;}
+        background-repeat: no-repeat; 
+        background-size: cover;background-position: center center;}
     .row.content {height: 1500px}
     .sidenav {
-      background-color: #dba3e4;
-      height: 100%;}
+      background-color: #88e1b6;
+      height: 100%;} 
     footer {
       background-color: #555;
-      color: #dba3e4;
+      color: #88e1b6;
       padding: 15px;}
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;}
       .row.content {height: auto;}}
-     .row {
+      .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;}
@@ -44,7 +44,7 @@
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
-    max-width: 100%;}} 
+    max-width: 100%;}}
   </style>
 </head>
 <body>
@@ -68,38 +68,63 @@
           </button>
         </span>
       </div>
-      <br>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1IuclRyJsh46e7NVjb6vuX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
     <div class="col-sm-9">
-      <h2>Tervetuloa mukaan matkalle!</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Teksti by Saara S., Toukokuu 19, 2025.</h5>
-      <h5><span class="label label-success">Aloitus</span></h5><br>
-      <p>Minulla on ollut lapsuudesta saakka suuri haave päästä käymään Yhdysvalloissa. Vuonna 2014 pääsin toteuttamaan tämän haaveen vihdoin ja viimein. Kiersin silloin rannikolta rannikolle lähtien San Fransiscosta ja päätyen New Yorkiin. Toinen mahdollisuus vierailla maassa tapahtui vuonna 2017, jolloin keskiössä oli itärannikko aina New Yorkista Key Westiin. Kokosin tähän mieleenpainuvimmat kohteet molemmista reissuista. Mukana saattaa olla muutama vinkki. Tervetuloa matkalla mukaan, toivottavasti viihdyt!</p>
+      <div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">KYSY</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Jos haluat kysellä vinkkejä tai matkatarinoita, niin ota reippaasti yhteyttä!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Helsinki, FIN</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> saara.sorvali@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nimi" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Kysy" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       <br><br>
-      <hr>
+      <h4>Kommentteja:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
           <div class="row">
   <div class="column">
-    <img src="tassut.JPG">
-    <img src="taco.JPG">
-    <img src="juomat.JPG">
+    <img src="keysaari.jpg">
+    <img src="miamibeach.JPG">
   </div>
   <div class="column">
-    <img src="talosf.JPG">
-    <img src="laatat.JPG">
+    <img src="laatat2.jpg">
+    <img src="orleans.JPG">
   </div>
     <div class="column">
-    <img src="tassut.JPG">
-    <img src="taco.JPG">
-    <img src="juomat.JPG">
+    <img src="keysaari.jpg">
+    <img src="miamibeach.JPG">
   </div>
   <div class="column">
-    <img src="talosf.JPG">
-    <img src="laatat.JPG">
+    <img src="laatat2.jpg">
+    <img src="orleans.JPG">
   </div>
     </div>
-            <br>
+              <br>
             </div>
           </div>
         </div>
@@ -110,13 +135,6 @@
 
 <footer class="container-fluid">
   <p>© Saara Sorvali 2025</p>
-  <p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
-</p>
 </footer>
 
 </body>
